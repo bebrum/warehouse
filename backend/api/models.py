@@ -256,9 +256,9 @@ class OneCEvent(models.Model):
         ACCEPTED_WAREHOUSE = 'accepted_warehouse', 'Принято на склад БП/СП'
         TRANSFERRED_TO_LAB = 'transferred_to_lab', 'Передано в лабораторию'
         TRANSFERRED_FROM_LAB = 'transferred_from_lab', 'Передано из лаборатории'
-        ACCEPTED_LAB = 'accepted_lab', 'Принято в лаборатории'
-        DONE_READY = 'done_ready', 'Выполнено / готово к выдаче'
-        ISSUED_CUSTOMER = 'issued_customer', 'Выдан заказчику'
+        ACCEPTED_LAB = 'accepted_lab', 'В лаборатории'
+        DONE_READY = 'done_ready', 'Выполнено. На складе БП/СП'
+        ISSUED_CUSTOMER = 'issued_customer', 'Выдано заказчику'
         OTHER = 'other', 'Другой статус'
 
     import_batch = models.ForeignKey(OneCImportBatch, related_name='events', on_delete=models.CASCADE)
